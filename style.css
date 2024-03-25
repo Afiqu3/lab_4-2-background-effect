@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #78A083;
+    overflow: hidden;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.main-div{
+    position: relative;
+    margin: auto;
+    top: 170px;
+    left: 40px;
+    width: 850px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #35374B;
+    color: #fff;
+    z-index: 1;
+}
+
+.main-div h1{
+    padding: 50px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container .box{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+}
+
+.animate, .box:hover{
+    animation: myanime 2s linear forwards;
+}
+
+@keyframes myanime{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        background-color: #0f0;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
